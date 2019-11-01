@@ -28,7 +28,6 @@ lille <- lille %>% mutate(P16_18P=P16_POP1824+P16_POP2539+
 lille$hab_par_bar[lille$hab_par_bar=="Inf"]<-NA
 data <- st_join(data, lille) %>%
   filter(!is.na(NOM_IRIS))
-names(data)
 
 # carte ----
  ggplot() +
