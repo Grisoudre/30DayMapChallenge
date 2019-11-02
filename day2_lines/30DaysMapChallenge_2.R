@@ -57,7 +57,7 @@ ggplot() +
   annotation_map_tile(zoom=13,cachedir = system.file("rosm.cache", package = "ggspatial"),
                       type="cartodark") +
   geom_sf(data = st_geometry(mel),aes(color=mel$etat), size=1.4, fill="transparent") + 
-  scale_color_manual(values=c("chocolate3","aquamarine4"),aesthetics = "color") +
+  scale_color_manual(values=c("aquamarine4","chocolate3"),aesthetics = "color") +
   geom_sf(data = st_geometry(data), fill="transparent", color="grey50")+
   geom_sf(data = st_geometry(mel.proj),color="chocolate1", size=1.4) +
   geom_sf(data = st_geometry(mel.proj),color="chocolate3", size=.7) +
