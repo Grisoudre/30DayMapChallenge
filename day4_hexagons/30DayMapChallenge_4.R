@@ -16,7 +16,7 @@ mel_com <- aggregate(mel_com[,"EPCI"], by=list(mel_com$INSEE_COM), FUN="sum") %>
 
 mel_com.sp <- as(mel_com, "Spatial")
 hexa <- calculate_grid(mel_com.sp, grid_type = "hexagonal", seed=4)
-hexa <- assign_polygons(mel_com.sp, hexa) # très très long
+hexa <- assign_polygons(mel_com.sp, hexa) # /!\ peu être long si bcp de polygones
 hexa <- st_as_sf(hexa)
 
 hexa <- merge(hexa, pauv_15, by.x="INSEE_COM", by.y="CODGEO", all.x=T)
