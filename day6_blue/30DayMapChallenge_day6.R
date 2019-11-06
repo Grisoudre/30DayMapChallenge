@@ -147,7 +147,7 @@ geom_sf(data=mel$geometry, color="snow3", fill="transparent")+
                     state_length = 5,
                     transition_length = 0)+
   labs(title ="Accidents dans la MEL constatés par la police impliquant au moins un·e
-piéton·ne (yc en roller ou trotinette) ou un·e cycliste par heure
+piéton·ne (yc en roller ou trottinette) ou un·e cycliste par heure
 {closest_state}h",
        col = "", caption = "Source : BAAC 2009 à 2018")+
   theme(panel.grid.major = element_line(colour = 'transparent'),
