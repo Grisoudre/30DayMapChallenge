@@ -15,9 +15,10 @@ pdc <- st_read("data/Pdc_COM.shp")
 
 # Mise en forme ----
 
+
 lic <- lic %>% 
   filter(substr(code_commune,1,2) %in% c("59","62")) %>%
-  filter(str_detect(nom_fed,"pêche")) %>% 
+  filter(str_detect(nom_fed,"canoë|kayak")) %>% 
   group_by( code_commune) %>% 
   summarise(l_2016 = sum(l_2016)) %>% 
    arrange(desc(l_2016)) %>% 
@@ -42,7 +43,7 @@ ggplot()+
           col="lightcyan2", size=.4)+
   geom_sf(data=water$geometry, 
           col="lightcyan1", size=.2)+
-  labs(title = "Cours d'eau et licences de pêche sportive dans le Nord et le Pas-de-Calais", 
+  labs(title = "Cours d'eau et licences de canoë-kayak dans le Nord et le Pas-de-Calais", 
        caption="Source : Injep, fond : OSM",
        fill="Nombre de\nlicences (2016)")+ 
   theme(panel.grid.major = element_line(colour = 'transparent'),
