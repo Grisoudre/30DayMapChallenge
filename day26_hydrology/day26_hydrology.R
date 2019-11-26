@@ -23,8 +23,8 @@ lic <- lic %>%
    arrange(desc(l_2016)) %>% 
   select(code_commune, l_2016)
 
-nord <- merge(nord, t, by.x="insee",by.y="code_commune",all.x=T)
-pdc <- merge(pdc, t, by.x="insee",by.y="code_commune",all.x=T)
+nord <- merge(nord, lic, by.x="insee",by.y="code_commune",all.x=T)
+pdc <- merge(pdc, lic, by.x="insee",by.y="code_commune",all.x=T)
 
 # Carte --------
 
