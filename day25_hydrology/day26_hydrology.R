@@ -51,5 +51,5 @@ ggplot()+
 
 # Export -----
 
-ggsave(  path ="output", "30daymapchallenge_day25.png",width=12, height=9, dpi=300)
+ggsave(  path ="output", "30daymapchallenge_day26.png",width=12, height=9, dpi=300)
 
