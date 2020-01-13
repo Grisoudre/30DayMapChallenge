@@ -1,34 +1,69 @@
-Echelle;Nom_univ;Departement;Ville;Insee
-Département;Université de Lille;Sociologie;Lille;59350
-Département;Université de Lille;Anthropologie;Lille;59350
-Département;Université de Lille;Culture;Lille;59350
-Département;Université de Lille;Physique;Lille;59350
-Département;Université de Lille;Chimie;Lille;59350
-Université;Iut Tours;Carrière sociale;Tours;36261
-Université;Université Paris 7;;Paris;75113
-Université;Université Paris Dauphine-PSL;;Paris;75116
-Université;Ehess;;Paris;75106
-Département;Université de Montpellier;Mathématiques;Montpellier;34172
-Université;Université de Bordeaux;;Bordeaux;33063
-UFR;Université de Rouen;Lettres;Rouen;76540
-Département;Université de Rouen;Département de sociologie;Rouen;76540
-Université;Université d’Evry;;Evry;91228
-Université;Université Paris-Sud;;Orsay;91471
-Département;Université Paris 8;Philosophie;Saint-Denis;93066
-Département;Université Paris 1;Langues;Paris;75105
-UFR;Université Paris 1;Science politique;Paris;75105
-Département;Université de Lille;Science politique;Lille;59350
-Université;Université de Lille;;Lille;59350
-Département;Université de Lille;Institut de sociologie et d’anthropologie;Lille;59350
-UFR;Université Paris Est Marne la Vallée;SHS;Champs-sur-Marne;77083
-Université;Université de Paris 8;;Saint-Denis;93066
-Université;Université Rennes 1;;Rennes;35238
-Département;Université Paris 6;Mathématiques;Paris;75105
-Université;Université Rennes 2;;Rennes;35238
-Université;Université Jean Moulin;;Saint-Etienne;42218
-Université;Université Paris Est Marne la Vallée;;Champs-sur-Marne;77083
-UFR;Université Paris 1;Géographie;Paris;75105
-Université;Université Jean Jaurès;;Toulouse;31555
-Département;Université de Tours;Géographique;Tours;36261
-Département;Université de Bordeaux;Physique;Bordeaux;33063
-Département;Université d’Aix-Marseille;Mathématiques;Marseille;13205
+"Echelle";"Rattachement";"Nom";"Ville";"Insee"
+"Département";"Université de Lille";"Sociologie";"Lille";59350
+"Département";"Université de Lille";"Anthropologie";"Lille";59350
+"Département";"Université de Lille";"Culture";"Lille";59350
+"Département";"Université de Lille";"Physique";"Lille";59350
+"Département";"Université de Lille";"Chimie";"Lille";59350
+"Université";"Iut Tours";"Carrière sociale";"Tours";36261
+"Université";"Université Paris 7";;"Paris";75113
+"Université";"Université Paris Dauphine-PSL";;"Paris";75116
+"Université";"Ehess";;"Paris";75106
+"Département";"Université de Montpellier";"Mathématiques";"Montpellier";34172
+"Université";"Université de Bordeaux";;"Bordeaux";33063
+"UFR";"Université de Rouen";"Lettres";"Rouen";76540
+"Département";"Université de Rouen";"Département de sociologie";"Rouen";76540
+"Université";"Université d’Evry";;"Evry";91228
+"Université";"Université Paris-Sud";;"Orsay";91471
+"Département";"Université Paris 8";"Philosophie";"Saint-Denis";93066
+"Département";"Université Paris 1";"Langues";"Paris";75105
+"UFR";"Université Paris 1";"Science politique";"Paris";75105
+"Département";"Université de Lille";"Science politique";"Lille";59350
+"Université";"Université de Lille";;"Lille";59350
+"Département";"Université de Lille";"Institut de sociologie et d’anthropologie";"Lille";59350
+"UFR";"Université Paris Est Marne la Vallée";"SHS";"Champs-sur-Marne";77083
+"Université";"Université de Paris 8";;"Saint-Denis";93066
+"Université";"Université Rennes 1";;"Rennes";35238
+"Département";"Université Paris 6";"Mathématiques";"Paris";75105
+"Université";"Université Rennes 2";;"Rennes";35238
+"Université";"Université Jean Moulin";;"Saint-Etienne";42218
+"Université";"Université Paris Est Marne la Vallée";;"Champs-sur-Marne";77083
+"UFR";"Université Paris 1";"Géographie";"Paris";75105
+"Université";"Université Jean Jaurès";;"Toulouse";31555
+"Département";"Université de Tours";"Géographique";"Tours";36261
+"Département";"Université de Bordeaux";"Physique";"Bordeaux";33063
+"Département";"Université d’Aix-Marseille";"Mathématiques";"Marseille";13205
+"Revue";"Ehess";"Genèses";"Paris";75106
+"Revue";"Ehess";"ARSS ";"Paris";75106
+"Revue";"MSH Paris-Nord";"sociétés contemporaines";"Saint-Denis";93066
+"Revue";;"revue d'histoire du 19ème ";"Paris";75118
+"Revue";"Sciences Po";"gouvernement et action publique ";"Paris";75106
+"Revue";"Université Paris Dauphine-PSL";"sociologie du travail ";"Paris";75116
+"Revue";;"genre sexualité société ";"Paris";75105
+"Revue";"Ens Lyon";"tracés ";"Lyon";69387
+"Revue";;"nouvelle revue du travail ";"Paris";75105
+"Revue";;"critique internationale ";"Paris";75106
+"Revue";"Université Paris Nanterre";"Cultures & conflits";"Nanterre";92050
+"Revue";;"politiques de communication ";"Fontaine";38169
+"Revue";"Université Paris 1";"politix ";"Paris";75105
+"Revue";"Fondation MSH";"le journal des anthropologues ";"Paris";75106
+"Revue";;"Participations ";"Lille";59350
+"Revue";;"socio logos ";"Paris";75117
+"Revue";;"Travail genre et société ";"Paris";75106
+"Revue";"Collège de France";"L'Homme ";"Paris";75105
+"Revue";"MSH Paris-Nord";"Le mouvement social ";"Saint-Denis";93066
+"Revue";"Sciences Po";"Vingtième siècle ";"Paris";75106
+"Revue";;"mouvements ";"Paris";75113
+"Revue";"MSH Paris-Saclay-ENS Cachan ";"L'homme et la société ";"Cachan";94016
+"Revue";"Université Paris 1";"genre et histoire ";"Paris";75105
+"Revue";"Dares";"travail et emploi ";"Paris";75115
+"Revue";"Université d’Évry-Val-d’Essonne";"les mondes du travail ";"Evry";91228
+"Revue";"CMH";"Sociologie ";"Paris";75114
+"Revue";;"savoir agir ";"Vulaines sur Seine";77533
+"Laboratoire";"Université de Lille";"Ceraps ";"Lille";59350
+"Laboratoire";"Université de Lille";"Clersé ";"Villeneuve d'Ascq";59009
+"Laboratoire";"Université Paris 8";"CRESSPA ";"Saint-Denis";93066
+"Laboratoire";"Université de Strasbourg";"SAGE ";"Strasbourg";67482
+"Laboratoire";"Université de Tours";"CITERES ";"Tours";36261
+"Laboratoire";"Université Paris 13";"CEPN";"Villetaneuse";93079
+"Laboratoire";"Université Paris Dauphine-PSL";"IRISSO";"Paris";75116
+"Laboratoire";"Université Paris 3";"IHEAL";"Paris";75105
