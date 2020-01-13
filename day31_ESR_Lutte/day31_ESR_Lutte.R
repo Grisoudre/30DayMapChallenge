@@ -25,23 +25,62 @@ comd <- st_centroid(com %>% filter(is.na(n)==F) %>%
                       select("geometry", "insee"))
 comc <- data.frame(st_coordinates(comd), comd$insee)
 comc <-  st_as_sf(comc, coords = c("X", "Y"), crs=st_crs(com))
-mobb <- mob %>% group_by(Ville, Insee) %>%  summarise(n = n())
+
+mobb_u <- mob %>% filter(Echelle !="Revue" & Echelle !="Laboratoire") %>% 
+  group_by(Ville, Insee) %>%  summarise(n = n())
+mobb_r <- mob %>% filter(Echelle =="Revue") %>% 
+  group_by(Ville, Insee) %>%  summarise(n = n())
+mobb_l <- mob %>% filter(Echelle =="Laboratoire") %>% 
+  group_by(Ville, Insee) %>%  summarise(n = n())
 
 # Jointure table mobb et fonds
-comc <- merge(comc, mobb, by.x = "comd.insee", by.y = "Insee",
-              all.x=T)
+com_u <- merge(comc, mobb_u, by.x = "comd.insee", by.y = "Insee",
+               all.x=T) %>% filter(is.na(n)==F)
+com_r <- merge(comc, mobb_r, by.x = "comd.insee", by.y = "Insee",
+               all.x=T) %>% filter(is.na(n)==F)
+com_l <- merge(comc, mobb_l, by.x = "comd.insee", by.y = "Insee",
+               all.x=T) %>% filter(is.na(n)==F)
 
 # Carte -----
+# Départements, UFR et universités :
 ggplot()+ 
-  geom_sf(data=dep, col = "gray20", size=.2)+
-  geom_sf(data=comc, aes(size=n),col="red", show.legend = "point")+
+  geom_sf(data=dep, col = "gray10", size=.2)+
+  geom_sf(data=com_u, aes(size=n),col="firebrick", show.legend = "point")+
   coord_sf(datum = NA)+
   theme(panel.grid.major = element_line(colour = 'transparent'),
         panel.background = element_rect(fill = "white"),
         title=element_text(size=16))+
   labs(size="Nombre de composantes\n déclarées", 
-       title = "Départements et universités en lutte",
+       title = "Départements, UFR et universités en lutte",
        caption = "Source : Collectif de mobilisation") 
 
-# output ----
-ggsave( path ="output", "Carte_ESR_Lutte.png",width=16, height=8,dpi=300)
+ggsave( path ="output", "Carte_ESR_Lutte_univ.png",width=16, height=8,dpi=300)
+
+# Revues
+ggplot()+ 
+  geom_sf(data=dep, col = "gray10", size=.2)+
+  geom_sf(data=com_r, aes(size=n),col="seagreen", show.legend = "point")+
+  coord_sf(datum = NA)+
+  theme(panel.grid.major = element_line(colour = 'transparent'),
+        panel.background = element_rect(fill = "white"),
+        title=element_text(size=16))+
+  labs(size="Nombre de revues\n déclarées", 
+       title = "Revues en lutte",
+       caption = "Source : Collectif de mobilisation") 
+
+
+ggsave( path ="output", "Carte_ESR_Lutte_revues.png",width=16, height=8,dpi=300)
+
+# Laboratoires
+ggplot()+ 
+  geom_sf(data=dep, col = "gray10", size=.2)+
+  geom_sf(data=com_l, aes(size=n),col="steelblue", show.legend = "point")+
+  coord_sf(datum = NA)+
+  theme(panel.grid.major = element_line(colour = 'transparent'),
+        panel.background = element_rect(fill = "white"),
+        title=element_text(size=16))+
+  labs(size="Nombre de laboratoires\n déclarées", 
+       title = "Laboratoires en lutte",
+       caption = "Source : Collectif de mobilisation") 
+
+ggsave( path ="output", "Carte_ESR_Lutte_labo.png",width=16, height=8,dpi=300)
